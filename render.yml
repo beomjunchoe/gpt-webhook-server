@@ -2,5 +2,5 @@ services:
   - type: web
     name: gpt-webhook-server
     env: python
-    startCommand: "python webhook_server.py"
+    startCommand: "python gpt-webhook-server.py"
     plan: free
