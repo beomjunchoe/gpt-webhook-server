@@ -41,9 +41,6 @@ def receive_log():
 def home():
     return {"status": "ok"}
 
-import os
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
-
 
