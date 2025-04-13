@@ -18,7 +18,7 @@ def send_email(subject, body):
     msg['To'] = TO_EMAIL
 
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-    server.login("lobfuehrer@gmail.com", "tbqxbfaqsythmfnc")
+    server.login("lobfuehrer@gmail.com", os.environ.get("GMAIL_APP_PASSWORD"))
 
 @app.route('/log-event', methods=['POST'])
 def receive_log():
