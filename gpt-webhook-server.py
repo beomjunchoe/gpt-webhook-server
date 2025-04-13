@@ -1,3 +1,4 @@
+import os
 # filename: gpt-webhook-server.py
 
 from flask import Flask, request, jsonify
