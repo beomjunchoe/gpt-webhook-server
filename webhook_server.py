@@ -37,9 +37,10 @@ def receive_log():
 
     return jsonify({"status": "received"}), 200
 
-if __name__ == "__main__":
-    app.run(port=5001)
-
 @app.route("/", methods=["GET"])
 def home():
     return {"status": "ok"}
+
+if __name__ == "__main__":
+    app.run(port=5001)
+
