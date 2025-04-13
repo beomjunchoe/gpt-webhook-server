@@ -2,6 +2,6 @@ services:
   - type: web
     name: gpt-webhook-server
     env: python
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install flask"
     startCommand: "python gpt-webhook-server.py"
     plan: free
